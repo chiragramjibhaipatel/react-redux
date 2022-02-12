@@ -4,17 +4,18 @@ import HomePage from "./home/HomePage";
 import AboutPage from "./about/AboutPage";
 import Header from "./common/Header";
 import { NotFoundPage } from "./NotFoundPage";
-
+import CoursesPage from "./courses/CoursesPage";
 
 export function App() {
-  return(
+  return (
     <div className="container-fluid">
-      <Header/>
+      <Header />
       <Switch>
-        <Route exact path="/" component={HomePage}/>
-        <Route path="/about" component={AboutPage}/>
-        <Route component={NotFoundPage}/>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/courses" component={CoursesPage} />
+        <Route component={NotFoundPage} />
       </Switch>
     </div>
-  ) 
+  );
 }
