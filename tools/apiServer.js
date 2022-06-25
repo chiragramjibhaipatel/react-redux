@@ -79,3 +79,6 @@ function validateCourse(course) {
   if (!course.category) return "Category is required.";
   return "";
 }
+
+
+//my ne comment
